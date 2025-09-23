@@ -34,6 +34,7 @@ int main()
                   printf("\n'7' appear : %d",d7);
                    printf("\n'8' appear : %d",d8);
                     printf("\n'9' appear : %d",d9);
+                     printf("\n'0' appear : %d",d0);
           return 0;
 
     }
