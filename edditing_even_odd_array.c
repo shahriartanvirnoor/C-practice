@@ -22,10 +22,14 @@ int main() {
         }
         
     }
-    for(co=0;co<15;co++)
-    printf(" %d ",odd[co]);
-    for(ce=0; ce<15;ce++)
-    printf(" %d ",even[ce]);
+    printf("Odd number in the array= %d",co);
+    printf("\nOdd array : ");
+    for(int i=0;i<co;i++)
+    printf(" %d ",odd[i]);
+    printf("\nEven number in the array= %d",ce);
+    printf("\nEven  array :");
+    for(int i=0; i<ce;i++)
+    printf(" %d ",even[i]);
 
     return 0;
 }
