@@ -16,7 +16,7 @@ int main()
         if(row == col && row>1 && col>1){
         for(i=0; i<row; i++){
             for(j=0; j<col; j++){
-                if((i==j && arr[i][j]==1)||(9i!=j && arr[i][j]==0))
+                if((i==j && arr[i][j]==1)||(i!=j && arr[i][j]==0))
                     y1=0;
                 else 
                 y2=1;
