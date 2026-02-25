@@ -18,11 +18,10 @@ int main() {
     scanf("%d", &pos);
     size = size + 1;
     for(i = size-1; i>= pos; i--){
-        if(i==pos){
+       arr[i] = arr[ i- 1];
             arr[pos -1 ]= num;
-        }
-        else 
-        arr[i] = arr[ i- 1];
+       
+        
     }
     printf("NEw array is : \n");
     for(i= 0; i< size; i++){
