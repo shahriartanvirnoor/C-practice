@@ -1,0 +1,65 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int  MAXSIZE = 8;
+int stack[8];
+int top= -1;
+int isfull(){
+    if(top== MAXSIZE)
+     return 1;
+     else
+     return 0;
+}
+int isempty(){
+    if(top==-1)
+    return 1;
+    else return 0;
+}
+
+void push(int data){
+
+    if(!isfull())
+    {
+        top = top+1;
+        stack[top]= data;
+    }
+    else{
+        printf("Stack is full, try when it has space!\n");
+    }
+}
+int pop(){
+    int data;
+    if(!isempty()){
+        data = stack[top];
+        top -=1;
+        return data;
+
+    }
+    else {
+        printf("There is no element left, So we coudn't find anything.\n");
+    }
+};
+int main(){
+    push(89);
+    push(12);
+    push(23);
+    push(34);
+    push(45);
+    push(56);
+    push(67);
+    push(78);
+    push(100);
+    int i;
+    for(i = 0; i< 8; i++){
+        printf("%d ", stack[i]);
+        if(i==7)
+            printf("\n");
+    }
+
+    printf("Using pop function::::\n");
+    while(!isempty()){
+        int data = pop();
+        printf("%d ",data);
+    }
+    return 0;
+}
